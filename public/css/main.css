@@ -72,7 +72,8 @@ body {
   padding-top: calc(1.13636vw + 0.39773rem);
   padding-bottom: calc(1.13636vw + 0.39773rem);
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #07090e 0%, rgba(7, 9, 14, 0.9) 20%, rgba(7, 9, 14, 0) 100%); }
   @media (min-width: 75em) {
     .header {
       font-size: 1.25rem; } }
