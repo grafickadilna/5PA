@@ -6,7 +6,8 @@
     @include fluid-font(custom-icon-below);
     @include media($menu-item-breakpoint){
         justify-content: flex-start;
-        @include fluid-font(custom-icon-above);  
+        @include fluid-font(custom-icon-above);
+        padding-bottom: 2em;
     }
 }
 
@@ -49,7 +50,7 @@
 .menu__item__name{
     text-decoration: none;
     color: $color-secondary;
-    margin-top: rem(15);
+    margin-top: 1em;
     display: inline-block;
     font-weight: 600;
 }
