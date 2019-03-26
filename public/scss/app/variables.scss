@@ -1,9 +1,9 @@
 //-----z-indexes--
 $z-indexes: (
-background: -1,
+background: -10,
+main: 0,
+background-overlay: 5,
 header: 100,
-header-background: -2,
-header-overlay:-1,
 video: -100
 );
 

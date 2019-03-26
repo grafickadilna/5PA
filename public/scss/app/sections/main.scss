@@ -1,5 +1,6 @@
 .main{
     display: flex;
+    z-index: z-index(main);
     flex-grow: 1;
     align-items: center;
     justify-content: center;

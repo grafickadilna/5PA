@@ -12,13 +12,6 @@
     @include linear-interpolation-chain(padding-bottom,$header-paddings-vertical);
     align-items: center;
     justify-content: space-between;
-
-    &--background{
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center top;
-        background-image: url(../img/header-background-xl@2x.png); 
-    }
 }
 
 .header__logo{

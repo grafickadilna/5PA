@@ -9,7 +9,11 @@
     background-size: cover;
     background-position: center top;
     background-image: url(../img/background-xl@2x.jpg); 
-
+    &--transparent{
+        pointer-events: none;
+        z-index: z-index(background-overlay);
+        background-image: url(../img/header-background-xl@2x.png); 
+    }
     /*    @include media(xl){
             background-image: url(../img/background-xl.jpg); 
             @include media-retina{
