@@ -47,8 +47,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center top;
-  background-image: url(../img/test-test.jpg);
-  /*background-image: url(../img/background-xl@2x.jpg);*/
+  background-image: url(../img/background-xl@2x.jpg);
   /*    @include media(xl){
           background-image: url(../img/background-xl.jpg); 
           @include media-retina{
