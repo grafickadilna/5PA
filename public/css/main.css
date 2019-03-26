@@ -131,8 +131,6 @@ body {
   @media (min-width: 75em) {
     .main {
       padding-top: 6.42813rem; } }
-  .main--overlay {
-    background-color: rgba(0, 0, 0, 0.65); }
   .main--menu {
     padding-top: calc(25.89286vw - 2.20982rem);
     padding-bottom: calc(10.71429vw - 0.26786rem); }

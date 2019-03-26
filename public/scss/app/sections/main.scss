@@ -6,12 +6,6 @@
     width: 100%;
     @include linear-interpolation-chain(padding-top, $main-paddings-top);
 
-
-    &--overlay{
-        background-color: transparentize($color-primary,0.35);
-    }
-
-
     &--menu{
         @include linear-interpolation-chain(padding-top, $main-paddings-top-breakpoint-below);
         @include media($menu-item-breakpoint){
