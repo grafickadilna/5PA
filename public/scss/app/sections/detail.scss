@@ -1,0 +1,27 @@
+.detail{
+    @include container;
+    align-self: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail__heading{
+
+}
+
+.detail__block{
+    display: flex;
+    flex-direction: column;
+    max-width: rem(700);
+    margin-top: 0;
+    @include linear-interpolation-chain(margin-bottom,$detail-block-spacings);
+}
+
+.detail__paragraph{
+    
+}
+
+.detail__image{
+    
+}

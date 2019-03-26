@@ -1,0 +1,46 @@
+.image{
+    position: relative;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 2.8em;
+    @include fluid-font(s); 
+}
+
+.image__container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 0.22em solid $color-terciary;
+    cursor: pointer;
+    margin-bottom: .5em;
+}
+
+.image__ratio{
+    display: block;
+    width: 100%;
+}
+
+.image__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    transform-origin: center center;
+    transition: transform 500ms ease;
+
+    @at-root .image__container:hover &{
+        transform: scale(1.1,1.1);
+    }
+}
+
+.image__caption{
+    font-style: italic;
+    font-weight: 300;
+
+    &--center{
+        text-align: center;
+    }
+}

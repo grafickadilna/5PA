@@ -1,0 +1,56 @@
+.textslider{
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: rem(100 + $textslider-controlls-size);
+}
+
+.textslider__slide{
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 500ms ease;
+    &--active{
+        transition-delay: 500ms;
+        opacity: 1;
+    }
+}
+
+.textslider__line{
+    font-weight: bold;
+    letter-spacing: rem(3);
+    @include fluid-font(xl);
+
+    &--highlight{
+        color: $color-terciary;
+    }
+}
+
+.textslider__controlls{
+    display: flex;
+    position: fixed;
+    bottom: rem(50);
+}
+
+.textslider__controll{
+    display: block;
+    width: rem($textslider-controlls-size);
+    height: rem($textslider-controlls-size);
+    background-color: $textslider-controlls-color;
+    border-radius: 50%;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 500ms ease;
+
+
+    &:not(:first-of-type){
+        margin-left: rem($textslider-controlls-spacing);
+    }
+
+    &--active, &:hover{
+        opacity: 1;
+    }
+}

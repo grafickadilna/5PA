@@ -1,0 +1,10 @@
+.paragraph{
+    width: 100%;
+    @include fluid-font(m);
+    line-height: $paragraph-line-height;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: $paragraph-spacing;
+    text-align: justify;
+    @include linear-interpolation-chain(margin-bottom,$detail-paragraph-spacings);
+}

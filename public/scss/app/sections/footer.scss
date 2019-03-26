@@ -1,0 +1,28 @@
+.footer{
+    @include container;
+    @include fluid-font(s); 
+    &--wide{
+        .footer__container{
+            max-width: 100%;
+        }
+
+    }
+}
+
+.footer__container{
+    display: flex;
+    border-top: 0.1em solid $color-secondary;
+    max-width: 43.75rem;
+    width: 100%;
+    margin: 0 auto; 
+    justify-content: space-between;
+    padding: 0.6em 0;
+
+}
+
+.footer__line{
+
+    &--highlighted{
+        color: $color-terciary;
+    }
+}

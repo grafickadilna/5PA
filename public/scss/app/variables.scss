@@ -1,0 +1,84 @@
+//-----z-indexes--
+$z-indexes: (
+background: -1,
+header: 100,
+header-background: -2,
+header-overlay:-1,
+video: -100
+);
+
+$color-primary: black;
+$color-secondary: white;
+$color-terciary: #DA0E16;
+
+//main
+$main-paddings-top-breakpoint-above:(xl: 102.85, m: 65);
+$main-paddings-top-breakpoint-below:(m: 120,s: 47.5);
+$main-paddings-bottom:(xl: 63,s: 63);
+$main-paddings-top: (xl:102.85, s: 64);
+//!main
+
+//header
+$header-paddings-horizontal: (xl:20,s:10);
+$header-paddings-vertical:  (xl:20,s:10);
+
+$header-logo-widths: (xl: 160,s: 70);
+$header-menu-spacings: (xl: 64, s: 10);
+//!header
+
+
+//textslider
+$textslider-controlls-size: 15;
+$textslider-controlls-color: $color-secondary;
+$textslider-controlls-spacing: 30;
+//!textslider
+
+//menu
+$menu-item-widths-above: (xl:100,l: 80,m: 80);
+$menu-item-widths-below: (m:80,s:60);
+$menu-item-breakpoint: m;
+$menu-item-vertical-spacings-above: (xl: 100,l: 60, m:60);
+$menu-item-vertical-spacings-below: (m: 60,s: 30);
+//!menu
+
+//heading
+$heading-image-breakpoint: m;
+
+$heading-image-spacing: 0.3em; 
+$heading-image-width-above: 1.6em;
+$heading-image-width-below: 1.6em;
+$heading-spacing: 0.7em;
+
+$subheading-spacings: (xl: 20, s:10);
+//!heading
+
+
+//detail
+$detail-block-spacings: (xl:25,s:15);
+$detail-paragraph-spacings: (xl:35,s:25);
+//detail
+
+
+//paragraph
+$paragraph-line-height: 1.4;
+$paragraph-spacing: 2em;
+//!paragraph
+
+//list
+$list-indent: 2em;
+$list-spacing: 2em;
+$list-item-line-height: 1.2;    
+$list-item-spacing: 0.5em;
+$list-item-bullet-size: 0.5em;
+
+//!list
+
+//image
+
+//!image
+
+
+//contacts
+$contacts-block-breakpoint: l;
+//!contacts
+

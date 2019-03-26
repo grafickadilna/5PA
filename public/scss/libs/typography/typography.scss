@@ -1,0 +1,9 @@
+@import "variables.scss";
+
+@mixin fluid-font($size){
+    @if(map-has-key($font-sizes, $size)){
+        @include linear-interpolation-chain(font-size,map-get($font-sizes,$size));
+    }@else{
+        @error "The key #{$size} is missing in the map ’$font-sizes’";  
+    }
+}

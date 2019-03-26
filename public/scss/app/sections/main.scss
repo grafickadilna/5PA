@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    @include linear-interpolation-chain(padding-top, $main-paddings-top);
+
+
+    &--overlay{
+        background-color: transparentize($color-primary,0.35);
+    }
+
+
+    &--menu{
+        @include linear-interpolation-chain(padding-top, $main-paddings-top-breakpoint-below);
+        @include media($menu-item-breakpoint){
+            @include linear-interpolation-chain(padding-top, $main-paddings-top-breakpoint-above);
+        }
+        @include linear-interpolation-chain(padding-bottom, $menu-item-vertical-spacings-below);
+        @include media($menu-item-breakpoint){
+            padding-bottom: 0;
+        } 
+    }
+
+}

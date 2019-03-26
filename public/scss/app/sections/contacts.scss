@@ -1,0 +1,38 @@
+.contacts{
+    @include container;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-self: flex-start;
+    justify-content: space-between;
+}
+
+.contacts__heading{
+    width: 100%;
+}
+
+.contacts__block{
+    width: 100%;
+    &--left{
+        @include media($contacts-block-breakpoint){
+            width: 30%;
+        }
+
+    }
+    &--right{
+        @include media($contacts-block-breakpoint){
+            width: 60%;
+        }
+    }
+}
+
+.contacts__map{
+    @include fluid-font(s); 
+    width: 100%;
+    border: 0.22em solid $color-terciary;
+    height: 40vw;
+    max-height: rem(360);
+    @include media($contacts-block-breakpoint){
+        height: 30vw;
+    }
+}
+

@@ -1,0 +1,39 @@
+.heading{
+    display: flex;
+    align-items: center;
+    letter-spacing: rem(2);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+    @include fluid-font(xl);
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: $heading-spacing;
+
+
+    &--subheading{
+        justify-content: flex-start;
+        text-align: left;
+        @include fluid-font(l);
+    }
+}
+
+.heading__image{
+    width: $heading-image-width-below;
+    @include media($heading-image-breakpoint){
+       margin-right: $heading-image-spacing;
+       width: $heading-image-width-above;
+    }
+
+}
+
+.heading__text{
+    width: 100%;
+    @include media($heading-image-breakpoint){
+        width: auto;
+        text-align: left;
+    }
+    &--highlighted{
+        color: $color-terciary;
+    }
+}
