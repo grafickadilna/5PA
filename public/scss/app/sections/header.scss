@@ -34,7 +34,8 @@
 }
 
 .header__menu__item{
-
+    color: $color-secondary;
+    text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;

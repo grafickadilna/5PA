@@ -7,4 +7,7 @@
     margin-bottom: $paragraph-spacing;
     text-align: justify;
     @include linear-interpolation-chain(margin-bottom,$detail-paragraph-spacings);
+    &--bold{
+        font-weight: bold;
+    }
 }

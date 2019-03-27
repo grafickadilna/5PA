@@ -16,6 +16,14 @@
         text-align: left;
         @include fluid-font(l);
     }
+    
+    &--center{
+          justify-content: center;
+    }
+    
+    &--bold{
+        font-weight: bold;
+    }
 }
 
 .heading__image{

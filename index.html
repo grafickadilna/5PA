@@ -48,7 +48,7 @@ and open the template in the editor.
                 <div class="textslider__controlls">
                     <textslider-controll v-for="(slide, index) in slides"
                                          v-bind:active='slide.active'
-                                         v-on:click.native='activate(index)'
+                                         v-on:click='activate(index)'
                                          >
                     </textslider-controll>
                 </div>
@@ -63,7 +63,12 @@ and open the template in the editor.
             });
             Vue.component('textslider-controll', {
                 props: ["active"],
-                template: '<span class="textslider__controll" v-bind:class="{\'textslider__controll--active\': active }"></span>',
+                template: '<span class="textslider__controll" v-bind:class="{\'textslider__controll--active\': active }"  v-on:click="click"></span>',
+                methods: {
+                    click() {
+                        this.$emit('click');
+                    }
+                }
             });
 
             var app = new Vue({

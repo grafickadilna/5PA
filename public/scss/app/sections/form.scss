@@ -1,0 +1,68 @@
+.form{
+    @include fluid-font(m);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.form__input{
+    width: 100%;
+    height: 3em;
+    background-color: transparent;
+    outline: none;
+    border: 0.2em solid transparentize($color-secondary,0.4);
+    color: transparentize($color-secondary,0.4);
+    margin-bottom: 1.2em;
+    padding: 0 1em;
+    transition-property: color, border-color;
+    transition-duration: 500ms;
+
+
+    &:hover,&:focus{
+        border-color: $color-secondary;
+        color:  $color-secondary;
+    }
+    @include media($form-input-breakpoint){
+        width: 49%;
+    }
+
+}
+
+.form__textarea{
+    width: 100%;
+    height: 20em;
+    background-color: transparent;
+    outline: none;
+    border: 0.2em solid transparentize($color-secondary,0.4);
+    color: transparentize($color-secondary,0.4);
+    margin-bottom: 1.2em;
+    padding: 1em 1em;
+    transition-property: color, border-color;
+    transition-duration: 500ms;
+
+
+    &:hover,&:focus{
+        border-color: $color-secondary;
+        color:  $color-secondary;
+    }
+}
+
+.form__button{
+    margin: auto;
+    padding: 0.5em 2em;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 0.2em solid transparentize($color-secondary,0.4);
+    color: transparentize($color-secondary,0.4);
+    cursor: pointer;
+    transition-property: color, border-color, background-color;
+    transition-duration: 500ms;
+
+    &:hover,&:focus{
+        background-color: $color-terciary;
+        border-color: $color-terciary;
+        color:  $color-secondary;
+    }
+}
+
