@@ -37,10 +37,6 @@ html{
 }
 
 body{
-
-}
-
-body{
     min-height: 100vh;
     font-family: "DIN Pro",Tahoma, Geneva, sans-serif;
     font-size: rem(16);
@@ -48,4 +44,5 @@ body{
     display: flex;
     flex-direction: column;
     color: $color-secondary;
+    background-color: rgb(7,9,14);
 }
