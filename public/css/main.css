@@ -288,7 +288,8 @@ body {
   @media (min-width: 37.5em) {
     .menu {
       justify-content: flex-start;
-      font-size: calc(0.5vw + 0.625rem); } }
+      font-size: calc(0.5vw + 0.625rem);
+      padding-bottom: 2em; } }
   @media (min-width: 37.5em) and (min-width: 75em) {
     .menu {
       font-size: 1rem; } }
@@ -334,7 +335,7 @@ body {
 .menu__item__name {
   text-decoration: none;
   color: white;
-  margin-top: 0.9375rem;
+  margin-top: 1em;
   display: inline-block;
   font-weight: 600; }
 
