@@ -19,6 +19,7 @@
 
 .header__logo{
     @include linear-interpolation-chain(width,$header-logo-widths);
+    @include linear-interpolation-chain(height,$header-logo-heights);
 }
 
 .header__button{
