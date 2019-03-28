@@ -1,0 +1,11 @@
+{
+    "elements": {
+        "textslider-slide": {},
+        "textslider-controll": {}
+    },
+    "attributes": {
+        "playsinline": {
+            "context": "video"
+        }
+    }
+}
