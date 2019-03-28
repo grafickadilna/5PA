@@ -222,7 +222,7 @@ body {
   align-self: stretch;
   align-items: center;
   justify-content: center;
-  padding-bottom: 7.1875rem; }
+  padding-bottom: 10.3125rem; }
 
 .textslider__slide {
   position: absolute;
@@ -291,7 +291,7 @@ body {
     .menu {
       justify-content: flex-start;
       font-size: calc(0.5vw + 0.625rem);
-      padding-bottom: 2em; } }
+      padding-bottom: 4em; } }
   @media (min-width: 37.5em) and (min-width: 75em) {
     .menu {
       font-size: 1rem; } }
