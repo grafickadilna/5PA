@@ -43,8 +43,13 @@
     position: relative;
     display: block;
     margin: 0 auto;
-    width: 6.15em;
-    height: 6.15em;
+    width: 5em;
+    height: 5em;
+    
+    @include media($menu-item-breakpoint){
+        width: 6.15em;
+        height: 6.15em;  
+    }
 }
 
 .menu__item__name{

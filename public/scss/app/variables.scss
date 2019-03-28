@@ -13,7 +13,7 @@ $color-terciary: #DA0E16;
 
 //main
 $main-paddings-top-breakpoint-above:(xl: 102.85, m: 65);
-$main-paddings-top-breakpoint-below:(m: 120,s: 47.5);
+$main-paddings-top-breakpoint-below:(m: 120,s: 80);
 $main-paddings-bottom:(xl: 63,s: 63);
 $main-paddings-top: (xl:102.85, s: 64);
 //!main
@@ -87,4 +87,8 @@ $contacts-block-breakpoint: l;
 //form
 $form-input-breakpoint: m;
 //!form
+
+//references
+$references-item-spacings-above: (xl: 100, l: 60, m:60);
+//!references
 

@@ -3,6 +3,7 @@
 @mixin container() {
     display: flex;
     width: 100%;
+    @include fluid-font(width);
     max-width: rem($layout-container-max-width);
     margin-left: auto;
     margin-right: auto;
@@ -13,7 +14,8 @@
 @mixin container-pl{
     display: flex;
     width: 100%;
-    max-width: rem($layout-container-max-width); 
+    @include fluid-font(width);
+    max-width: rem($layout-container-max-width);
     margin-left: auto;
     margin-right: auto;
 }
