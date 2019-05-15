@@ -188,7 +188,7 @@ body {
 .footer__container {
   display: flex;
   border-top: 0.1em solid white;
-  max-width: 43.75rem;
+  max-width: 51.875rem;
   width: 100%;
   margin: 0 auto;
   justify-content: space-between;
