@@ -37,7 +37,9 @@
 
 .heading__text{
     width: 100%;
+    margin-top: 0.5em;
     @include media($heading-image-breakpoint){
+        margin-top: 0;
         width: auto;
         text-align: left;
     }

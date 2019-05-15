@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>5P Agency</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="IE=edge" />
+        <link rel="stylesheet" href="public/css/normalize.css">
+        <link rel="stylesheet" href="public/css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- Core CSS file -->
+        <link rel="stylesheet" href="public/plugins/PhotoSwipe/photoswipe.css"> 
+        <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+             In the folder of skin CSS file there are also:
+             - .png and .svg icons sprite, 
+             - preloader.gif (for browsers that do not support CSS animations) -->
+        <link rel="stylesheet" href="public/plugins/PhotoSwipe/default-skin/default-skin.css"> 
+        <!-- Core JS file -->
+        <script src="public/plugins/PhotoSwipe/photoswipe.min.js"></script> 
+        <!-- UI JS file -->
+        <script src="public/plugins/PhotoSwipe/photoswipe-ui-default.min.js"></script> 
+    </head>
+    <body>
+        <div class="background">
+        </div>
+        <header class="header header--overlay">
+            <a href="index.html" class="header__logo">
+                <svg class="logo" viewBox="0 0 870 341.8" >
+                <g class="logo_object logo__object--6">
+                <rect class="logo_object logo__object--1" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--2" x="306.9" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--3" x="306.9" y="275.2" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--4" y="275.2" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--5" x="152.9" y="138.6" width="66.6" height="66.6">
+                </rect>
+                </g>
+                <path class="logo_object logo__object--7" d="M515.2,0v341.8H624v-69.3h246V0H515.2z M766.3,175.4H623.9V97.2h142.4V175.4z"/>
+                </svg>
+            </a>
+            <a href="menu.html" class="header__button">
+                zpět
+            </a>
+        </header>
+        <main class="main">
+            <div id="app" class="detail">
+                <h1 class="detail__heading heading">
+                    <span class="heading__text">
+                        O nás  a<span class="heading__text heading__text--highlighted"> čemu věříme</span>
+                    </span>
+                </h1>
+                <section class="detail__block">
+                    <p class="paragraph">
+                        Od našeho založení v roce 1994 se v 5P AGENCY specializujeme na oblast <span class="paragraph--highlighted">direct marketingu a služby lettershopu</span>.
+                        Vznikli jsme jako rodinná firma a bez nadsázky můžeme říct, že se tisku a kompletaci poštovních zásilek věnujeme
+                        celý svůj profesní život. <span class="paragraph--highlighted">A v budoucnost adresné poštovní rozesílky věříme stále</span>, navzdory současnému rozmachu
+                        chytrých technologií, online aplikací a chatovacích robotů.
+                    </p>
+                    <p class="paragraph">
+                        Jsme přesvědčení, že <span class="paragraph--highlighted">tištěná korespondence si vždycky zachová punc důvěryhodnosti</span>, je hmatatelná a zůstává nám déle na očích.
+                        Může vonět i vyvolat touhu dotknout se krásného papíru, někdy trhat, jindy mačkat.Všichni máme před domem poštovní schránku.
+                        Všichni otvíráme obálky svým osobitým způsobem. Všechny potěší pohled od přátel z dovolené. A snad nikdo nechce olizovat poštovní známky.
+                    </p>
+                    <vue-image 
+                        v-on:show="show"
+                        v-bind:thumb="'public/img/background-l.jpg'" 
+                        v-bind:src="'public/img/background-l.jpg'" 
+                        v-bind:title="'Tohle je popisek obrázku'"
+                        v-bind:width="'1200'"
+                        v-bind:height="'864'">
+                    </vue-image>
+                    <p class="paragraph">
+                        I proto jsme stále na trhu a <span class="paragraph--highlighted">již přes dvacet pět let se věnujeme tisku a rozesílání dopisů</span>. Je to naše práce, kterou máme rádi a
+                        která změnila původně malou rodinnou firmu <span class="paragraph--highlighted">v předního poskytovatele direct marketingových služeb v České republice</span>. Jsme pyšní na to,
+                        že si nás nejvýznamnější společnosti a instituce opakovaně volí za svého dodavatele v oblasti direct marketingu. Odpovědnost v jednání a
+                        schopnost dostát svým závazkům historicky patřilo a stále patří k dobrému jménu 5P AGENCY. 
+                    </p>
+                </section>
+                <section class="detail__block">
+                    <h2 class="detail__heading heading heading--subheading">
+                        <span class="heading__text">5 důvodů proč si vybrat 5P Agency</span>
+                    </h2>
+                    <ul class="list">
+                        <li class="list__item">Máme za sebou přes dvacet pět rozvoje a cenných zkušeností</li>
+                        <li class="list__item">Nabízíme komplexní servis i jednotlivé služby samostatně</li>
+                        <li class="list__item">Provozujeme osvědčený automatický systém pro příjem a zpracování dat</li>
+                        <li class="list__item">Máme vlastní tiskárny, obálkovací stroje a tým dlouhodobých zaměstnanců</li>
+                        <li class="list__item">Splňujeme nejpřísnější certifikace v oblasti bezpečnosti a řízení kvality</li>
+                    </ul>
+                </section>
+                <section class="detail__block">
+                    <h2 class="detail__heading heading heading--subheading">
+                        <span class="heading__text">Bezpečnost a zpracování GDPR</span>
+                    </h2>
+                    <p class="paragraph">
+                        Zákon o ochraně osobních údajů, nejrůznější nařízení Evropské unie a strach z vysokých pokut v poslední době vystrašil
+                        mnoho firem využívajících direct marketing. Od vašich poštovních rozesílek vás ale nic odrazovat nemusí.
+                    </p>
+                    <p class="paragraph">
+                        Na rozdíl od e-mailu <span class="paragraph--highlighted">můžete poštovní zásilkou kontaktovat, koho chcete</span>. Nepotřebujete k tomu předem žádný souhlas,
+                        databázi poštovních adres si můžete sami připravit nebo legálně koupit. Navíc nehrozí, že by vaši poštovní zásilku
+                        zastavil cestou nějaký antispamový filtr.
+                    </p>
+                    <vue-image 
+                        v-on:show="show"
+                        v-bind:thumb="'public/img/background-l.jpg'" 
+                        v-bind:src="'public/img/background-l.jpg'" 
+                        v-bind:title="'Tohle je popisek obrázku'"
+                        v-bind:width="'1200'"
+                        v-bind:height="'864'">
+                    </vue-image>
+                    <p class="paragraph">
+                        Také pokud jde o <span class="paragraph--highlighted">předávání dat a jejich zpracování</span>, nemusíte se s námi ničeho obávat. Všechny naše procesy jsou
+                        nastaveny v <span class="paragraph--highlighted">souladu s aktuálním nařízením GDPR</span>. 
+                    </p>
+                    <p class="paragraph">
+                        Navíc již od roku 2005 jsme držiteli certifikace pro <span class="paragraph--highlighted">systém procesního řízení QMS </span> (aktuálně dle normy ČSN EN ISO 9001:2016)
+                        a v roce 2006 jsme se certifikovali dle systému <span class="paragraph--highlighted">řízení bezpečnosti informací</span> ISMS (dnes prezentovaného normou ČSN ISO/IEC 27001:2014).
+                    </p>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__line">
+                    © Copyright 2019
+                </div>
+                <div class="footer__line footer__line--highlighted">
+                    5P Agency s.r.o.
+                </div>
+            </div>
+        </footer>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            Vue.component('vue-image', {
+                props: ["thumb", "src", "title", "width", "height"],
+                template: `<figure class="image" v-on:click="show">
+                                <div class="image__container">
+                                    <img class="image__ratio" src="public/img/ratio-keepers/2x1.png" alt="ratio keeper">
+                                    <div class="image__img" v-bind:style="{'background-image': 'url(' + thumb + ')'}"></div>
+                                </div>
+                                <div class="image__caption image__caption--center">
+                                    {{ title }}
+                                </div>
+                           </figure>`,
+                methods: {
+                    show: function () {
+                        this.$emit("show", {
+                            src: this.$props.src,
+                            w: this.$props.width,
+                            h: this.$props.height
+                        });
+                    }
+                }
+            });
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    pswp: document.querySelectorAll('.pswp')[0],
+                },
+                methods: {
+                    show: function (slide) {
+                        var gallery = new PhotoSwipe(this.pswp, PhotoSwipeUI_Default, [slide]);
+                        gallery.init();
+                    }
+                }
+            }
+            );
+        </script>
+    </body>
+</html>

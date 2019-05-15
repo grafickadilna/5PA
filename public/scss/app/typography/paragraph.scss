@@ -10,4 +10,14 @@
     &--bold{
         font-weight: bold;
     }
+    &--highlighted{
+        font-weight: bold;
+        color: $color-terciary;
+    }
+    
+    &--tip{
+        font-style: italic;
+        border: rem(1.8) solid $color-secondary;
+        padding: 1em;
+    }
 }

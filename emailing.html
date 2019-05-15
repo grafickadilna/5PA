@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>5P Agency</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="IE=edge" />
+        <link rel="stylesheet" href="public/css/normalize.css">
+        <link rel="stylesheet" href="public/css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- Core CSS file -->
+        <link rel="stylesheet" href="public/plugins/PhotoSwipe/photoswipe.css"> 
+        <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+             In the folder of skin CSS file there are also:
+             - .png and .svg icons sprite, 
+             - preloader.gif (for browsers that do not support CSS animations) -->
+        <link rel="stylesheet" href="public/plugins/PhotoSwipe/default-skin/default-skin.css"> 
+        <!-- Core JS file -->
+        <script src="public/plugins/PhotoSwipe/photoswipe.min.js"></script> 
+        <!-- UI JS file -->
+        <script src="public/plugins/PhotoSwipe/photoswipe-ui-default.min.js"></script> 
+    </head>
+    <body>
+        <div class="background">
+        </div>
+        <header class="header header--overlay">
+            <a href="index.html" class="header__logo">
+                <svg class="logo" viewBox="0 0 870 341.8" >
+                <g class="logo_object logo__object--6">
+                <rect class="logo_object logo__object--1" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--2" x="306.9" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--3" x="306.9" y="275.2" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--4" y="275.2" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--5" x="152.9" y="138.6" width="66.6" height="66.6">
+                </rect>
+                </g>
+                <path class="logo_object logo__object--7" d="M515.2,0v341.8H624v-69.3h246V0H515.2z M766.3,175.4H623.9V97.2h142.4V175.4z"/>
+                </svg>
+            </a>
+            <a href="menu.html" class="header__button">
+                zpět
+            </a>
+        </header>
+        <main class="main">
+            <div id="app" class="detail">
+                <h1 class="detail__heading heading">
+                    <svg class="heading__image icon icon--emailing" viewBox="0 0 283.5 283.5">
+                    <path class="icon__square" d="M228.6,0H54.8C24.7,0,0,24.7,0,54.8v173.8c0,30.2,24.7,54.8,54.8,54.8h173.8
+                          c30.2,0,54.8-24.7,54.8-54.8V54.8C283.5,24.7,258.8,0,228.6,0z"/>
+                    <g>
+                    <path class="icon__path icon__path--1" d="M234.7,141.7c0-4.1-0.3-8.2-0.8-12.3c0,0,0,0,0,0c-6.1-46-45.7-80.7-92.2-80.7c-51.3,0-93,41.7-93,93
+                          s41.7,93,93,93c22.7,0,44.5-8.3,61.5-23.3c4.5-4,5-10.9,1-15.5c-4-4.5-10.9-5-15.5-1c-13,11.5-29.7,17.8-47,17.8
+                          c-39.2,0-71.1-31.9-71.1-71.1s31.9-71.1,71.1-71.1c35.5,0,65.8,26.5,70.5,61.7c0,0,0,0,0,0c0.4,3.1,0.6,6.2,0.6,9.4
+                          c0,0,0,0.1,0,0.1c0,0,0,0.1,0,0.1c0,7.9-6.5,14.4-14.4,14.4c-4.5,0-8.5-2.1-11.2-5.3c0.6-3,0.9-6.1,0.9-9.3
+                          c0-25.6-20.8-46.4-46.4-46.4s-46.4,20.8-46.4,46.4c0,25.6,20.8,46.4,46.4,46.4c14.3,0,27.1-6.5,35.6-16.7c5.9,4.2,13.2,6.7,21,6.7
+                          c20,0,36.3-16.3,36.3-36.3c0,0,0-0.1,0-0.1C234.7,141.8,234.7,141.8,234.7,141.7z M141.7,166.3c-13.6,0-24.6-11-24.6-24.6
+                          c0-13.6,11-24.6,24.6-24.6c13.6,0,24.6,11,24.6,24.6C166.3,155.3,155.3,166.3,141.7,166.3z"/>
+                    </g>
+                    </svg>
+                    <span class="heading__text">
+                        Email<span class="heading__text heading__text--highlighted">ing</span>
+                    </span>
+                </h1>
+                <section class="detail__block">
+
+
+                    <h2 class="detail__heading heading heading--subheading">
+                        <span class="heading__text">Oslovíme vaše zákazníky i po internetu</span>
+                    </h2>
+                    <p class="paragraph">
+                        Přestože je naší doménou tištěná korespondence, naprogramujeme a rozešleme pro vás i mailingové kampaně.
+                        Stejně jako v tištěných kampaních, vše připravíme maximálně personalizované, zabezpečené a se zpětnou vazbou prostřednictvím reportingu.  
+                    </p>
+                    <vue-image 
+                        v-on:show="show"
+                        v-bind:thumb="'public/img/background-l.jpg'" 
+                        v-bind:src="'public/img/background-l.jpg'" 
+                        v-bind:title="'Tohle je popisek obrázku'"
+                        v-bind:width="'1200'"
+                        v-bind:height="'864'">
+                    </vue-image>
+                    <p class="paragraph">
+                        Musíte však myslet na přísná pravidla pro ochranu osobních údajů a spamové filtry.
+                        Původ a kvalita databáze e-mailových adres je v tomto případě naprosto klíčová.
+                    </p>
+                    <p class="paragraph paragraph--tip">
+                        TIP: Využijte dvojitého zásahu a rozdělte svoji direct marketingovou kampaň na dvě fáze. V první můžete své adresáty oslovit dopisní zásilkou se všemi podrobnostmi nabídky a po krátké době se jim připomeňte ještě e-mailem. Samozřejmě obě rozesílky zařídíme za vás.
+                    </p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__line">
+                    © Copyright 2019
+                </div>
+                <div class="footer__line footer__line--highlighted">
+                    5P Agency s.r.o.
+                </div>
+            </div>
+        </footer>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            Vue.component('vue-image', {
+                props: ["thumb", "src", "title", "width", "height"],
+                template: `<figure class="image" v-on:click="show">
+                                <div class="image__container">
+                                    <img class="image__ratio" src="public/img/ratio-keepers/2x1.png" alt="ratio keeper">
+                                    <div class="image__img" v-bind:style="{'background-image': 'url(' + thumb + ')'}"></div>
+                                </div>
+                                <div class="image__caption image__caption--center">
+                                    {{ title }}
+                                </div>
+                           </figure>`,
+                methods: {
+                    show: function () {
+                        this.$emit("show", {
+                            src: this.$props.src,
+                            w: this.$props.width,
+                            h: this.$props.height
+                        });
+                    }
+                }
+            });
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    pswp: document.querySelectorAll('.pswp')[0],
+                },
+                methods: {
+                    show: function (slide) {
+                        var gallery = new PhotoSwipe(this.pswp, PhotoSwipeUI_Default, [slide]);
+                        gallery.init();
+                    }
+                }
+            }
+            );
+        </script>
+    </body>
+</html>

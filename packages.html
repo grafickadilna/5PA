@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>5P Agency</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="x-ua-compatible" content="IE=edge" />
+        <link rel="stylesheet" href="public/css/normalize.css">
+        <link rel="stylesheet" href="public/css/main.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <!-- Core CSS file -->
+        <link rel="stylesheet" href="public/plugins/PhotoSwipe/photoswipe.css"> 
+        <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+             In the folder of skin CSS file there are also:
+             - .png and .svg icons sprite, 
+             - preloader.gif (for browsers that do not support CSS animations) -->
+        <link rel="stylesheet" href="public/plugins/PhotoSwipe/default-skin/default-skin.css"> 
+        <!-- Core JS file -->
+        <script src="public/plugins/PhotoSwipe/photoswipe.min.js"></script> 
+        <!-- UI JS file -->
+        <script src="public/plugins/PhotoSwipe/photoswipe-ui-default.min.js"></script> 
+    </head>
+    <body>
+        <div class="background">
+        </div>
+        <header class="header header--overlay">
+            <a href="index.html" class="header__logo">
+                <svg class="logo" viewBox="0 0 870 341.8" >
+                <g class="logo_object logo__object--6">
+                <rect class="logo_object logo__object--1" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--2" x="306.9" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--3" x="306.9" y="275.2" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--4" y="275.2" width="66.6" height="66.6">
+                </rect>
+                <rect class="logo_object logo__object--5" x="152.9" y="138.6" width="66.6" height="66.6">
+                </rect>
+                </g>
+                <path class="logo_object logo__object--7" d="M515.2,0v341.8H624v-69.3h246V0H515.2z M766.3,175.4H623.9V97.2h142.4V175.4z"/>
+                </svg>
+            </a>
+            <a href="menu.html" class="header__button">
+                zpět
+            </a>
+        </header>
+        <main class="main">
+            <div id="app" class="detail">
+                <h1 class="detail__heading heading">
+                    <svg class="heading__image icon icon--packaging" viewBox="0 0 283.5 283.5" >
+                    <path class="icon__square" d="M228.6,0H54.8C24.7,0,0,24.7,0,54.8v173.8c0,30.2,24.7,54.8,54.8,54.8h173.8
+                          c30.2,0,54.8-24.7,54.8-54.8V54.8C283.5,24.7,258.8,0,228.6,0z"/>
+                    <g class="icon__path icon__path--1">
+                    <path class="icon__path icon__path--2" d="M218.2,146L146,218.2v18.1c22.8-1,45.3-10.2,62.7-27.6c17.4-17.4,26.6-39.9,27.6-62.7L218.2,146z"/>
+                    <path class="icon__path icon__path--3" d="M47.1,146c1,22.8,10.2,45.3,27.6,62.7c17.4,17.4,39.9,26.6,62.7,27.6v-18.1L65.3,146L47.1,146z"/>
+                    <path class="icon__path icon__path--4" d="M137.5,47.1c-22.8,1-45.3,10.2-62.7,27.6s-26.6,39.9-27.6,62.7l18.1,0l72.2-72.2L137.5,47.1z"/>
+                    <path class="icon__path icon__path--5" d="M208.7,74.8c-17.4-17.4-39.9-26.6-62.7-27.6l0,18.1l72.2,72.2l18.1,0C235.3,114.7,226.1,92.2,208.7,74.8z"/>
+                    <rect x="94" y="94" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -58.7074 141.7323)" class="icon__path  icon__path--6"  width="95.5" height="95.5"/>
+                    </g>
+                    </svg>
+                    <span class="heading__text">
+                        Výroba<span class="heading__text heading__text--highlighted"> obalů</span>
+                    </span>
+                </h1>
+                <section class="detail__block">
+                    <h2 class="detail__heading heading heading--subheading">
+                        <span class="heading__text"> Vyrobíme osobní tašku každému vašemu zákazníkovi</span>
+                    </h2>
+                    <p class="paragraph">
+                        Kdybychom měli spočítat, kolik nejrůznějších obálek prošlo naším skladem, byly by to milióny. Umíme naplnit i vaše speciální představy týkající se barevných, lesklých, kartonových nebo bezpečnostních obálek.
+                    </p>
+                    <p class="paragraph">
+                        Stejně dobře umíme splnit vaše přání ohledně dárkových <span class="paragraph--highlighted">krabiček a papírových tašek na míru</span>,
+                        pro které si můžete vybrat materiál již od nízkých nákladů. Jak je naším dobrým zvykem, každá taška a krabička <span class="paragraph--highlighted">může být unikátní
+                            díky personalizaci</span>, takže není problém vytisknout na každý kus jiné jméno, osobní věnování nebo podpis. 
+                    </p>
+                    <vue-image 
+                        v-on:show="show"
+                        v-bind:thumb="'public/img/background-l.jpg'" 
+                        v-bind:src="'public/img/background-l.jpg'" 
+                        v-bind:title="'Tohle je popisek obrázku'"
+                        v-bind:width="'1200'"
+                        v-bind:height="'864'">
+                    </vue-image>
+                    <p class="paragraph">
+                        Na výrobu obalů pro významné příležitosti si můžete vybírat ze vzorníku luxusních grafických papírů nebo zvolený materiál doplnit laminem či speciálním lakem s 3D plastickým efektem.
+                    </p>
+                    <p class="paragraph paragraph--tip">
+                        TIP: Nespokojte se s průměrem, když to není třeba. Technologické zázemí 5P AGENCY umožňuje odlišit vaše tiskoviny a výrobky již na první pohled. Výrazné obálky, originální tašky a krabičky nebo firemní stuhy vyšperkují prezentaci vaší společnosti k dokonalosti.
+                    </p>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__line">
+                    © Copyright 2019
+                </div>
+                <div class="footer__line footer__line--highlighted">
+                    5P Agency s.r.o.
+                </div>
+            </div>
+        </footer>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+            <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
+
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
+
+                <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <script type="text/javascript">
+            Vue.component('vue-image', {
+                props: ["thumb", "src", "title", "width", "height"],
+                template: `<figure class="image" v-on:click="show">
+                                <div class="image__container">
+                                    <img class="image__ratio" src="public/img/ratio-keepers/2x1.png" alt="ratio keeper">
+                                    <div class="image__img" v-bind:style="{'background-image': 'url(' + thumb + ')'}"></div>
+                                </div>
+                                <div class="image__caption image__caption--center">
+                                    {{ title }}
+                                </div>
+                           </figure>`,
+                methods: {
+                    show: function () {
+                        this.$emit("show", {
+                            src: this.$props.src,
+                            w: this.$props.width,
+                            h: this.$props.height
+                        });
+                    }
+                }
+            });
+            var app = new Vue({
+                el: '#app',
+                data: {
+                    pswp: document.querySelectorAll('.pswp')[0],
+                },
+                methods: {
+                    show: function (slide) {
+                        var gallery = new PhotoSwipe(this.pswp, PhotoSwipeUI_Default, [slide]);
+                        gallery.init();
+                    }
+                }
+            }
+            );
+        </script>
+    </body>
+</html>

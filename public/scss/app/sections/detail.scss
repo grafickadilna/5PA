@@ -13,7 +13,8 @@
 .detail__block{
     display: flex;
     flex-direction: column;
-    max-width: rem(700);
+    align-items: center;
+    max-width: rem(830);
     margin-top: 0;
     @include linear-interpolation-chain(margin-bottom,$detail-block-spacings);
 }
