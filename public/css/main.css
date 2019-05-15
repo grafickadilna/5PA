@@ -617,6 +617,9 @@ body {
     .detail {
       padding-right: 2.5rem; } }
 
+.detail__heading {
+  width: 100%; }
+
 .detail__block {
   display: flex;
   flex-direction: column;
