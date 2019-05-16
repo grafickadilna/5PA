@@ -16,11 +16,11 @@
         text-align: left;
         @include fluid-font(l);
     }
-    
+
     &--center{
-          justify-content: center;
+        justify-content: center;
     }
-    
+
     &--bold{
         font-weight: bold;
     }
@@ -28,9 +28,12 @@
 
 .heading__image{
     width: $heading-image-width-below;
+    display: none;
+
     @include media($heading-image-breakpoint){
-       margin-right: $heading-image-spacing;
-       width: $heading-image-width-above;
+        display: block;
+        margin-right: $heading-image-spacing;
+        width: $heading-image-width-above;
     }
 
 }

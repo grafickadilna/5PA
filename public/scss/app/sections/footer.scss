@@ -11,18 +11,30 @@
 
 .footer__container{
     display: flex;
-    border-top: 0.1em solid $color-secondary;
+    border-top: 0.1em solid transparentize($color-secondary,0.4);
     max-width: rem(830);
     width: 100%;
     margin: 0 auto; 
-    justify-content: space-between;
-    padding: 0.6em 0;
+    align-items: center;
+    padding: 1em 0;
+    flex-direction: column-reverse;
 
+    @include media($footer-logo-breakpoint){
+        justify-content: space-between;
+        flex-direction: row;
+    }
 }
 
 .footer__line{
-
     &--highlighted{
         color: $color-terciary;
+    }
+}
+
+.footer__logo{
+    @include linear-interpolation-chain(width,$footer-logo-widths);
+    margin-bottom: .7em;
+    @include media($footer-logo-breakpoint){
+        margin-bottom: 0;
     }
 }
